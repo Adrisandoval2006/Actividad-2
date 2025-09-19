@@ -11,11 +11,11 @@ def change(x, y):
     aim.x = x
     aim.y = y
 
-def inside(point):
+def inside(point): 
     "Return True if point inside boundaries."
     return -200 < point.x < 190 and -200 < point.y < 190
 
-def move_food():
+def move_food(): #Se agregó la función para que la comida se mueva aleatoriamente 
     "Move food randomly one step but keep inside the window."
     directions = [vector(10, 0), vector(-10, 0),
                   vector(0, 10), vector(0, -10)]
