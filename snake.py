@@ -49,11 +49,34 @@ def move():
     clear()
 
     for body in snake:
-        square(body.x, body.y, 9, 'black')
+        square(body.x, body.y, 9, snake_color)
 
-    square(food.x, food.y, 9, 'green')
+    square(food.x, food.y, 9, food_color)
     update()
     ontimer(move, 100)
+
+def generate_color():
+    "Generates a random color"
+    color_list = ['green','blue', 'yellow','orange','black']
+    color_index = randrange(0,5)
+    return color_list[color_index]
+
+def verify_color(color):
+    "Makes sure that two colors are different"
+    color_list = ['green','blue', 'yellow', 'orange','black']
+    color_list.remove(color)
+    color_index = randrange(0,4)
+    return color_list[color_index]
+
+
+"""
+Se crean variables que almacenan los colores, para usarlas
+en la funcion move 
+"""
+
+snake_color = generate_color()
+food_color = verify_color(snake_color)
+
 
 setup(420, 420, 370, 0)
 hideturtle()
