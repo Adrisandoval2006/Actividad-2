@@ -56,13 +56,14 @@ def move():
     ontimer(move, 100)
 
 def generate_color():
-    "Generates a random color"
+    "De una lista de colores, se escoje uno de manera aleatoria"
     color_list = ['green','blue', 'yellow','orange','black']
     color_index = randrange(0,5)
     return color_list[color_index]
 
 def verify_color(color):
-    "Makes sure that two colors are different"
+    """Se elimina de la lista el color recibido
+       y de los colores restantes escoge un color"""
     color_list = ['green','blue', 'yellow', 'orange','black']
     color_list.remove(color)
     color_index = randrange(0,4)
