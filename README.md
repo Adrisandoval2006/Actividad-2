@@ -1,7 +1,7 @@
 # # Actividad 2 – Juego de la Víbora (Snake)
 
 ## Descripción del repositorio
-Este repositorio contiene el código base del juego **Snake** tomado de la librería [FreeGames](https://grantjenks.com/docs/freegames/snake.html).  
+Este repositorio contiene el código base del juego **Snake** tomado de la librería FreeGames.  
 El objetivo de la actividad fue **comprender el código existente**, **documentarlo** y **añadir nuevas funcionalidades** trabajando en equipo, usando ramas, commits documentados y Pull Requests en GitHub.
 
 Con los cambios realizados:
